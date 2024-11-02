@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="main-body">
+    <h2>Typing Speed Test</h2>
+
+    <div id="displaySentence" class="sentence-box"></div>
+
+    <div class="typing_section">
+        <label for="textarea"></label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" disabled></textarea>
+        <br>
+        <button id="btn">Start</button>
+    </div>
+
+    <div id="timer" class="timer">Time: 0.00 seconds</div>
+
+    <ul id="result" class="result"></ul>
+</section>
+
+<!-- History Table -->
+<div id="history" class="history">
+    <h3>Results History</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Test #</th>
+                <th>Speed (WPM)</th>
+                <th>Time Taken (s)</th>
+                <th>Accuracy (%)</th>
+                <th>Total Words</th>
+                <th>Correct Words</th>
+                <th>Wrong Words</th>
+                <th>Total Characters</th>
+                <th>Correct Characters</th>
+                <th>Wrong Characters</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

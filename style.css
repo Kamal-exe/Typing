@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    background-color: rgba(9, 9, 228, 0.35);
+    position: relative; /* Allow positioning of child elements */
+    padding-top: 20px; /* Add padding to the top */
+}
+
+.main-body {
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #e90c0c;
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin below the heading */
+}
+
+/* Textarea styling */
+#textarea {
+    border: .1rem solid #b0eb30;
+    border-radius: 1rem;
+    max-width: 120rem;
+    width: 120rem;
+    height: 10rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+}
+
+/* Button styling */
+#btn {
+    display: inline-block;
+    padding: 1rem 2.4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #ebd80a;
+    color: #050505;
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+}
+
+/* Display sentence styling */
+#displaySentence {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    letter-spacing: .02rem;
+    text-align: center;
+    border: 1px solid #7b0c49;
+    padding: 10px;
+    width: 60%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Result section styling */
+#result {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    padding-left: 0;
+}
+
+/* Highlighting text for correctness */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Timer display */
+.timer {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* History table styling */
+.history {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(145, 121, 143);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Set width of the history box */
+    max-height: 300px; /* Limit height */
+    overflow-y: auto; /* Scrollable if overflowing */
+    z-index: 1000; /* Stay on top */
+}
+
+/* Table styles for history */
+.history table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.history th, .history td {
+    border: 2px solid #f6ee05; /* Cell borders */
+    padding: 12px; /* Cell padding */
+    text-align: center; /* Center text */
+}
+
+.history th {
+    background-color: #b56363; /* Header background */
+}
+
+/* Ensure the results section doesn't overlap */
+.result {
+    margin-bottom: 350px; /* Space for history table above it */
+}
+
+/* Additional styles can be added below as needed */
